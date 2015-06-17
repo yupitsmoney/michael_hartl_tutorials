@@ -243,3 +243,52 @@ Processing by UsersController#index as HTML
   [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
   Rendered users/index.html.erb within layouts/application (0.6ms)
 Completed 200 OK in 30ms (Views: 29.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for ::1 at 2015-06-16 19:29:55 -0700
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 25ms (Views: 24.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2015-06-16 19:29:59 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 26ms (Views: 25.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/scaffold.self-83b741db49389dc7cfdf85bf7537a0219cce48e085c4116afc83d55c9af47c78.css?body=1" for ::1 at 2015-06-16 19:29:59 -0700
+
+
+Started GET "/assets/users.self-b60acab5af8d245ed2b3012f77d11d8d207d8eada27756badaf4ef05770d60f6.css?body=1" for ::1 at 2015-06-16 19:29:59 -0700
+
+
+Started GET "/assets/turbolinks.self-680e388bf7f759d85e2dbe0044d33f55e12b26da721317111c01ec92e53df55e.js?body=1" for ::1 at 2015-06-16 19:29:59 -0700
+
+
+Started GET "/" for ::1 at 2015-06-16 19:30:52 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 233ms (Views: 212.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/microposts" for ::1 at 2015-06-16 19:30:57 -0700
+Processing by MicropostsController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+SyntaxError (/Users/sagarsingh/fundamentals/big_hippo/moneysgithub/labs/booklearning/app/models/micropost.rb:4: syntax error, unexpected ':', expecting keyword_end
+		 presence: true
+		          ^):
+  app/models/micropost.rb:4: syntax error, unexpected ':', expecting keyword_end
+  app/controllers/microposts_controller.rb:7:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (3.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (15.7ms)
